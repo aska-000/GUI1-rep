@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.argX = new TextBox();
-            argY = new TextBox();
+            txtArgX = new TextBox();
+            txtArgY = new TextBox();
             label1 = new Label();
             label2 = new Label();
             button1 = new Button();
             SuspendLayout();
             // 
-            // argX
+            // txtArgX
             // 
-            this.argX.Location = new Point(21, 23);
-            this.argX.Name = "argX";
-            this.argX.Size = new Size(125, 29);
-            this.argX.TabIndex = 0;
-            this.argX.TextChanged += this.textBox1_TextChanged;
+            txtArgX.Location = new Point(21, 23);
+            txtArgX.Name = "txtArgX";
+            txtArgX.Size = new Size(125, 29);
+            txtArgX.TabIndex = 0;
+            txtArgX.TextChanged += textBox1_TextChanged;
             // 
-            // argY
+            // txtArgY
             // 
-            argY.Location = new Point(21, 58);
-            argY.Name = "argY";
-            argY.Size = new Size(125, 29);
-            argY.TabIndex = 1;
+            txtArgY.Location = new Point(21, 58);
+            txtArgY.Name = "txtArgY";
+            txtArgY.Size = new Size(125, 29);
+            txtArgY.TabIndex = 1;
             // 
             // label1
             // 
@@ -86,8 +86,8 @@
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(argY);
-            Controls.Add(this.argX);
+            Controls.Add(txtArgY);
+            Controls.Add(txtArgX);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -96,8 +96,8 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox argY;
+        private TextBox txtArgX;
+        private TextBox txtArgY;
         private Label label1;
         private Label label2;
         private Button button1;
