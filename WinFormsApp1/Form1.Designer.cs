@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            this.argX = new TextBox();
+            argY = new TextBox();
             label1 = new Label();
             label2 = new Label();
             button1 = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // argX
             // 
-            textBox1.Location = new Point(21, 23);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 29);
-            textBox1.TabIndex = 0;
-            textBox1.TextChanged += textBox1_TextChanged;
+            this.argX.Location = new Point(21, 23);
+            this.argX.Name = "argX";
+            this.argX.Size = new Size(125, 29);
+            this.argX.TabIndex = 0;
+            this.argX.TextChanged += this.textBox1_TextChanged;
             // 
-            // textBox2
+            // argY
             // 
-            textBox2.Location = new Point(21, 58);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 29);
-            textBox2.TabIndex = 1;
+            argY.Location = new Point(21, 58);
+            argY.Name = "argY";
+            argY.Size = new Size(125, 29);
+            argY.TabIndex = 1;
             // 
             // label1
             // 
@@ -86,8 +86,8 @@
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(argY);
+            Controls.Add(this.argX);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -97,7 +97,7 @@
         #endregion
 
         private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox argY;
         private Label label1;
         private Label label2;
         private Button button1;
