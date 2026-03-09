@@ -44,7 +44,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(21, 80);
+            textBox2.Location = new Point(21, 58);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 29);
             textBox2.TabIndex = 1;
@@ -52,20 +52,20 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(178, 26);
+            label1.Location = new Point(152, 26);
             label1.Name = "label1";
-            label1.Size = new Size(52, 21);
+            label1.Size = new Size(181, 21);
             label1.TabIndex = 2;
-            label1.Text = "label1";
+            label1.Text = "значение переменной x";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(178, 83);
+            label2.Location = new Point(151, 61);
             label2.Name = "label2";
-            label2.Size = new Size(52, 21);
+            label2.Size = new Size(182, 21);
             label2.TabIndex = 3;
-            label2.Text = "label2";
+            label2.Text = "значение переменной y";
             // 
             // Form1
             // 
