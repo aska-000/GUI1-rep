@@ -7,6 +7,9 @@ namespace WinFormsApp1
         public Form1()
         {
             InitializeComponent();
+
+            txtArgX.Text = Properties.Settings.Default.argX.ToString();
+            txtArgY.Text = Properties.Settings.Default.argY.ToString();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -26,6 +29,10 @@ namespace WinFormsApp1
             {
                 return;
             }
+
+            Properties.Settings.Default.argX = argX;
+            Properties.Settings.Default.argY = argY;
+            Properties.Settings.Default.Save();
 
             int result = Logic.Multiply(argX, argY);
             MessageBox.Show("результат произведения: " + result.ToString());
