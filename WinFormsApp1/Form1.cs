@@ -16,11 +16,19 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int argX = int.Parse(this.txtArgX.Text);
-            int argY = int.Parse(this.txtArgY.Text);
+            int argX, argY;
+            try
+            {
+                argX = int.Parse(this.txtArgX.Text);
+                argY = int.Parse(this.txtArgY.Text);
+            }
+            catch (FormatException)
+            {
+                return;
+            }
 
             int result = Logic.Multiply(argX, argY);
-            MessageBox.Show(result.ToString());
+            MessageBox.Show("результат произведения: " + result.ToString());
         }
     }
 
