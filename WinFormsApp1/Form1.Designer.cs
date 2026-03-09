@@ -32,6 +32,7 @@
             textBox2 = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -67,11 +68,21 @@
             label2.TabIndex = 3;
             label2.Text = "значение переменной y";
             // 
+            // button1
+            // 
+            button1.Location = new Point(21, 93);
+            button1.Name = "button1";
+            button1.Size = new Size(312, 29);
+            button1.TabIndex = 4;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(364, 148);
+            Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBox2);
@@ -88,5 +99,6 @@
         private TextBox textBox2;
         private Label label1;
         private Label label2;
+        private Button button1;
     }
 }
